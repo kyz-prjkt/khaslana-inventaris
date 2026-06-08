@@ -75,6 +75,10 @@ public class MainMenu extends javax.swing.JFrame {
             );
         }
     }
+    
+    public void refreshData() {
+        loadDataTable();
+    }
 
     /**
      * Creates new form MainMenu
@@ -292,7 +296,7 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteBtnActionPerformed
 
     private void addCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCategoryActionPerformed
-        // TODO add your handling code here:
+        new AddCategoryFrame(this).setVisible(true);
     }//GEN-LAST:event_addCategoryActionPerformed
 
     private void deleteCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCategoryActionPerformed
